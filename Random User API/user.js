@@ -14,7 +14,7 @@ const loadUser = () => {
 };
 
 const showUser = (userData) => {
-  let name, email, age, gander, country, image;
+  let name, email, age, gender, country, image;
   console.log(userData.results);
   const userDetails = document.getElementById('userDetails');
   for (const userInfo of userData.results) {
@@ -22,7 +22,7 @@ const showUser = (userData) => {
     name = `${userInfo.name.first} ${userInfo.name.last}`;
     age = userInfo.dob.age;
     email = userInfo.email;
-    gander = userInfo.gander;
+    gender = userInfo.gender;
     country = userInfo.location.country;
     image = userInfo.picture.large;
     userDiv.innerHTML = `<div class="col">
@@ -32,7 +32,7 @@ const showUser = (userData) => {
             <h5 class="card-title">${name}</h5>
             <p>Email: ${email}</p>
             <p>Age: ${age}</p>
-            <p>Gander: ${gander}</p>
+            <p>Gander: ${gender}</p>
             <p>Country: ${country}</p>
           </div>
         </div>
