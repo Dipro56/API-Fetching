@@ -29,7 +29,7 @@ const showUser = (userData) => {
         <div class="card h-100">
           <img src=${image} class="card-img-top" alt="User Image">
           <div class="card-body">
-            <h5 class="card-title">Name: ${name}</h5>
+            <h5 class="card-title">${name}</h5>
             <p>Email: ${email}</p>
             <p>Age: ${age}</p>
             <p>Gander: ${gander}</p>
